@@ -1,0 +1,19 @@
+# Chapter9Problem
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class test {
+
+	public static void main(String[] args) {
+		SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+		Date date=new Date();
+		long time=10000L;
+		int total=8;
+		while(total>0) {
+			date.setTime(time);
+			System.out.println(ft.format(date));
+			time=time*10;
+			total=total-1;
+		}
+
+	}
+}
